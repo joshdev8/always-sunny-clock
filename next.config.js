@@ -49,10 +49,7 @@ const securityHeaders = [
 	},
 ];
 
-module.exports = withPlugins([
-	[withBundleAnalyzer],
-	[withImages]
-], {
+module.exports = withPlugins([[withBundleAnalyzer], [withImages]], {
 	webpack(config, options) {
 		config.resolve.modules.push(path.resolve('./'));
 		return config;
@@ -67,9 +64,15 @@ module.exports = withPlugins([
 				headers: [
 					{ key: 'Access-Control-Allow-Credentials', value: 'true' },
 					{ key: 'Access-Control-Allow-Origin', value: '*' },
-					{ key: 'Access-Control-Allow-Methods', value: 'GET,OPTIONS,POST' },
+					{
+						key: 'Access-Control-Allow-Methods',
+						value: 'GET,OPTIONS,POST',
+					},
 					// eslint-disable-next-line max-len
-					{ key: 'Access-Control-Allow-Headers', value: 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version' },
+					{
+						key: 'Access-Control-Allow-Headers',
+						value: 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
+					},
 				],
 			},
 		];
