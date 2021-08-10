@@ -4,7 +4,6 @@ import Head from 'next/head';
 import { getTime } from '../helpers/time';
 import styles from '../styles/Home.module.css';
 
-
 export default function Home() {
 	const [timer, setTimer] = useState(false);
 	const [currentTime, setCurrentTime] = useState(null);

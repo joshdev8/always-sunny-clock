@@ -12,7 +12,7 @@ describe('Helpers: time', () => {
 			'Sunday',
 			'Monday',
 			'Tuesday',
-			            'Wednesday',
+			'Wednesday',
 			'Thursday',
 			'Friday',
 			'Saturday',
