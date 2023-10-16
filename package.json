@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^13.4.10",
-    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^12.1.5",
     "babel-jest": "^29.6.4",
     "eslint": "8.49.0",
