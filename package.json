@@ -12,7 +12,7 @@
     "pre-commit": "next lint --fix && git add -A ."
   },
   "dependencies": {
-    "next": "12.2.4",
+    "next": "13.5.4",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.8.5",
     "react": "17.0.2",
