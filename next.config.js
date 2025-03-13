@@ -3,9 +3,11 @@ const withImages = require('next-images');
 const webpack = require('webpack');
 const path = require('path');
 
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-	enabled: process.env.ANALYZE === 'true',
-});
+const withBundleAnalyzer = process.env.ANALYZE === 'true'
+	? require('@next/bundle-analyzer')({
+			enabled: true,
+	  })
+	: (config) => config;
 
 const ContentSecurityPolicy = `
   default-src 'self';
