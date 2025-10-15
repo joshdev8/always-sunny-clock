@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "next": "15.4.7",
+    "next": "15.5.5",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.8.5",
     "react": "19.1.1",
